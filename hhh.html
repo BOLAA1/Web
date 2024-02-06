@@ -1,184 +1,120 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-		<title>DMCA</title>
-				<meta name="description" content="DMCA">
-						<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/jquery-comments.css" />
-		<link rel="stylesheet" type="text/css" href="css/user.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/custom.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-		<!-- Font Awesome icons (free version)-->
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<!-- Google fonts-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Your CSS styles go here */
+        body {
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            background: var(--page);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            color: #f0f0f0;
+        }
 
+        .title {
+            font-size: 4vh;
+            color: var(--title);
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 0px 0px 5px 5px;
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 255, 255, 0.8);
+            font-weight: bold; /* Added to make the letters bold */
+        }
 
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 80vh;
+            overflow-y: auto;
+            scrollbar-color: var(--text-color) var(--primary-color);
+        }
 
+        ul::-webkit-scrollbar {
+            width: 8px;
+        }
 
+        ul::-webkit-scrollbar-thumb {
+            background-color: var(--text-color);
+            border-radius: 4px;
+        }
+
+        li {
+            padding: 8px;
+            font-size: 14px;
+            background-color: var(--accent-color);
+            margin: 3px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        li:hover {
+            background-color: var(--hover-color);
+        }
+
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #2c2c2c;
+            --accent-color: #444;
+            --text-color: #f0f0f0;
+            --hover-color: #555;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            position: relative;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            overflow: hidden;
+        }
+
+        #messageList {
+            margin-top: 0;
+            height: 100vh;
+        }
+    </style>
 </head>
-	<body id="page-top" style="background: url('images/background1.png'); background-size: cover;">
-		<!-- Navigation-->
-		<nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
-			<div class="container">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand js-scroll-trigger" href="/">
-                    Volleyrandom.Github.io
-                </a>
-	
+<body>
 
-				<div class="navbar-collapse collapse" id="nav-menu">
+<!-- Heading -->
+<h1 class="title">Links</h1>
 
-		
+<!-- Container to display messages -->
+<ul id="messageList"></ul>
 
-				</div>
-				<div class="d-none d-lg-block">
-			
-        <ul class="navbar-nav">
+<script>
+    // JavaScript code to create and display messages
+    const messages = [
+        "https://uhwsufhsdjfhasjhse78gsdfugiaud8asjkhdhuiwerfu.vercel.app", "https://frontend.development.sanluix.org", "https://database.development.sanluix.org", "https://peoplelikethisithink.fr.to", "https://9x773f-8080.csb.app",
+        "https://dove.soapclient.com", "https://5r4thx-8080.csb.app", "https://8qq933-8080.csb.app", "", "",
+        "", "", "", "", "",
+        "", "💀", "", "", "",
+        "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""
+    ];
 
+    // Displaying the messages on the webpage
+    const messageList = document.getElementById('messageList');
+    messages.forEach(message => {
+        const listItem = document.createElement('li');
+        listItem.textContent = message;
+        messageList.appendChild(listItem);
+    });
+</script>
 
-
-        </ul>
-
-
-
-
-				</div>
-			</div>
-		</nav>		
-
-
-
-
-
-
-<div class="container">
-
-
-
-	<div class="content-wrapper">
-		
-	<div style="padding-bottom: 20px"  align="center">
-		</div>
-
-	<div class="row">
-
-
-			
-
-			<div class="col-md-12">
-							
-
-
-
-
-
-                <div class="w-full h-full flex flex-col justify-center items-center py-20 gap-y-10 px-5">
-                    <h1 class="section-title">DMCA</h1>
-                    <div class="flex flex-col w-full max-w-7xl">
-                        <h1 class="text-base md:text-lg 2xl:text-xl font-semibold tracking-tight italic">Last Updated: 
-                        <!-- -->
-                        August 18, 2023</h1>
-                        <p class="pb-4">Volleyrandom.github.io
-                        <!-- -->
-                        (the &quot;Site &quot;) respects the intellectual property rights of others and expects its users to do the same. In accordance with the Digital Millennium Copyright Act of 1998, the text of which may be found on the U.S. Copyright Office website at http://www.copyright.gov/legislation/dmca.pdf, and specifically in accordance with 17 USC § 512(c)(3), 
-                        <!-- -->
-                        Volleyrandom.github.io
-                        <!-- -->
-                        will respond expeditiously to claims of copyright infringement committed using the 
-                        <!-- -->
-                        Volleyrandom.github.io
-                        <!-- -->
-                        service and/or any
-                        <!-- -->
-                        <!-- -->
-                        Volleyrandom.github.io
-                        <!-- -->
-                        website (the &quot;Site &quot;) if such claims are reported to 
-                        <!-- -->
-                        Volleyrandom.github.io
-                        <!-- -->
-                        &#x27;s Designated Email identified below.</p>
-                        <h1 class="text-lg md:text-xl 2xl:text-2xl font-semibold tracking-tight">DMCA Notice of Alleged Infringement (&quot;Notice &quot;)</h1>
-                        <p class="pb-4">If you are a copyright owner, authorized to act on behalf of one, or authorized to act under any exclusive right under copyright, please report alleged copyright infringements taking place on or through the Site by completing a DMCA Notice of Alleged Infringement and delivering it to 
-                        <!-- -->
-                        Volleyrandom.github.io
-                        <!-- -->
-                        &#x27;s Designated Email. Upon receipt of Notice as described below,
-                        <!-- -->
-                        <!-- -->
-                        Volleyrandom.github.io
-                        <!-- -->
-                        will take whatever action, in its sole discretion, it deems appropriate, including removal of the challenged content from the Site. Please note that if you fail to comply with all of the requirements of this section and of 17 USC § 512(c)(3) your DMCA notice may not be valid.</p>
-                        <ul class="list-disc list-inside">
-                            <li>Identify the copyrighted work that you claim has been infringed, or - if multiple copyrighted works are covered by your Notice - you may provide a representative list of the copyrighted works that you claim have been infringed.</li>
-                            <li>Identify the material or link you claim is infringing (or the subject of infringing activity) and to which access is to be disabled, including at a minimum, if applicable, the URL of the link shown on the Site or the exact location where such material may be found.</li>
-                            <li>Provide your company affiliation (if applicable), mailing address, telephone number, and, if available, email address.</li>
-                            <li>Include both of the following statements in the body of the Notice:</li>
-                            <ul class="list-disc list-inside pl-6">
-                                <li>&quot;I hereby state that I have a good faith belief that the disputed use of the copyrighted material is not authorized by the copyright owner, its agent, or the law (e.g., as a fair use).&quot;</li>
-                                <li>&quot;I hereby state that the information in this Notice is accurate and, under penalty of perjury, that I am the owner, or authorized to act on behalf of, the owner, of the copyright or of an exclusive right under the copyright that is allegedly infringed.&quot;</li>
-                            </ul>
-                            <li>Provide your full legal name and your electronic or physical signature.</li>
-                            <li>Deliver this Notice, with all items completed, to
-                            <!-- -->
-                            <!-- -->
-                            Volleyrandom.github.io
-                            <!-- -->
-                            &#x27;s Designated Email: 
-                            <!-- -->
-                            melbaligon16475
-                            <!-- -->
-                            @gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-
-
-
-			</div> <!-- end colume col-md-3 -->
-
-	</div> <!-- end row -->
-	
-
-</div> <!-- end content-wrapper -->
-
-
-
-
-
-</div> <!-- end container  -->
-
-
-
-
-
-
-
-
-
-
-
-	<div class="footer-copyright py-4">
-		<div class="container">
-			Volleyrandom.Github.io			<span class="dsb-panel">
-				<a href="/dmca.html">DMCA</a>			</span>
-		</div>
-	</div>
-	<script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
-	<script type="text/javascript" src="js/lazysizes.min.js"></script>
-	<script type="text/javascript" src="js/popper.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
-	  </body>
+</body>
 </html>
